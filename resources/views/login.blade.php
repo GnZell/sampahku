@@ -26,7 +26,7 @@
         <div class="card">
             <div class="card-body login-card-body">
 
-                <form action="" method="post">
+                <form>
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" placeholder="Email">
                         <div class="input-group-append">
@@ -46,7 +46,7 @@
                     <div class="row justify-content-center">
                         <!-- /.col -->
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+                            <a href="/dashboard" class="btn btn-primary btn-block">Masuk</a>
                             <p>Belum punya akun? <a href="/register">Daftar</a></p>
                         </div>
                         <!-- /.col -->

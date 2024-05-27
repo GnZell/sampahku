@@ -11,3 +11,18 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
+Route::get('/dashboard', function () {
+    return view('index');
+});
+Route::get('/sampahku', function () {
+    return view('sampahku.index');
+});
+Route::get('/sampahku/create', function () {
+    return view('sampahku.create');
+});
+Route::get('/sampahku/update', function () {
+    return view('sampahku.update');
+});
+Route::get('/sampahku/detail', function () {
+    return view('sampahku.detail');
+});
