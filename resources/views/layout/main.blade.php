@@ -106,7 +106,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <footer class="main-footer text-center">
         <!-- To the right -->
         <!-- Default to the left -->
-        <strong>Copyright &copy; <?= date('Y'); ?> | Capsone Project SampahKu </strong> All rights reserved.
+        <strong>Copyright &copy; <?= date('Y'); ?> | Capstone Project SampahKu </strong> All rights reserved.
     </footer>
     </div>
     <!-- ./wrapper -->
