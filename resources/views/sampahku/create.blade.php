@@ -19,7 +19,7 @@
                         <div class="card card-primary">
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form action="" method="post">
+                            <form action="{{Route('sampahku.store')}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="card-body">
                                     <div class="form-group">
@@ -37,7 +37,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Titik Koordinat (Opsional)</label>
-                                        <input type="text" class="form-control" name="koordinat" placeholder="Titik Koordinat">
+                                        <input type="text" class="form-control" name="titik_koordinat" placeholder="Titik Koordinat">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputFile">Foto</label>
@@ -54,7 +54,7 @@
 
                         <div class="card-footer">
                             <button type="submit" class="btn btn-success">Submit</button>
-                            <a href="/sampahku" class="btn btn-primary">Kembali</a>
+                            <a href="{{Route('sampahku.index')}}" class="btn btn-primary">Kembali</a>
                         </div>
                         </form>
                     </div>

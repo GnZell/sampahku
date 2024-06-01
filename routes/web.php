@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LaporanController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,18 +12,12 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
-Route::get('/dashboard', function () {
-    return view('index');
-});
-Route::get('/sampahku', function () {
-    return view('sampahku.index');
-});
-Route::get('/sampahku/create', function () {
-    return view('sampahku.create');
-});
-Route::get('/sampahku/update', function () {
-    return view('sampahku.update');
-});
-Route::get('/sampahku/detail', function () {
-    return view('sampahku.detail');
-});
+
+
+Route::get('/sampahku', [LaporanController::class, 'index'])->name('sampahku.index');
+Route::get('/sampahku/create', [LaporanController::class, 'create'])->name('sampahku.create');
+Route::post('/sampahku/create', [LaporanController::class, 'store'])->name('sampahku.store');
+Route::get('/sampahku/detail/{id}', [LaporanController::class, 'detail'])->name('sampahku.detail');
+Route::get('/sampahku/edit/{id}', [LaporanController::class, 'edit'])->name('sampahku.edit');
+Route::put('/sampahku/edit/{id}', [LaporanController::class, 'update'])->name('sampahku.update');
+Route::delete('/sampahku/{id}', [LaporanController::class, 'destroy'])->name('sampahku.destroy');

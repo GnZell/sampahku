@@ -23,26 +23,26 @@
                                     <thead>
                                         <tr>
                                             <th style="width: 30%">Nama</th>
-                                            <td>Ahmad Rizaldi</td>
+                                            <td>{{$sampahku->nama}}</td>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <th>Alamat Lengkap</th>
-                                            <td>Jalan Pekapuran Raya</td>
+                                            <td>{{$sampahku->alamat}}</td>
                                         </tr>
                                         <tr>
                                             <th>Deskripsi</th>
-                                            <td>Sampah</td>
+                                            <td>{{$sampahku->deskripsi}}</td>
                                         </tr>
                                         <tr>
                                             <th>Titik Koordinat</th>
-                                            <td></td>
+                                            <td>{{$sampahku->titik_koordinat}}</td>
                                         </tr>
                                         <tr>
                                             <th>Foto</th>
                                             <td>
-                                                <img src="{{asset('dist/img/avatar5.png')}}" alt="User Image">
+                                                <img src="{{ asset('storage/' . $sampahku->foto) }}" alt="User Image" width="50%">
                                             </td>
                                         </tr>
                                     </tbody>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a class="btn btn-primary mb-2" href="/sampahku">
+                            <a class="btn btn-primary mb-2" href="{{Route('sampahku.index')}}">
                                 <i class=""></i> Kembali
                             </a>
                         </div>

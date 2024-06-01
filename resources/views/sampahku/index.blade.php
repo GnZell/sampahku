@@ -31,12 +31,13 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach($sampahku as $data)
                                     <tr>
-                                        <td>Dummy1</td>
-                                        <td>Jln Pangeran Diponegoro</td>
-                                        <td>Sampah</td>
+                                        <td>{{$data->nama}}</td>
+                                        <td>{{$data->alamat}}</td>
+                                        <td>{{$data->deskripsi}}</td>
                                         <td>
-                                            <form action="" method="post">
+                                            <form action="{{Route('sampahku.destroy', $data->id)}}" method="post">
                                                 @csrf
                                                 @method('delete')
                                                 <a class="btn btn-success btn-sm" href="/sampahku/update">
@@ -44,7 +45,7 @@
                                                     </i>
                                                     Ubah
                                                 </a>
-                                                <a class="btn btn-warning btn-sm" href="/sampahku/detail">
+                                                <a class="btn btn-warning btn-sm" href="{{Route('sampahku.detail', $data->id)}}">
                                                     <i class="fas fa-info-circle">
                                                     </i>
                                                     Detail
@@ -53,7 +54,7 @@
                                             </form>
                                         </td>
                                     </tr>
-
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
