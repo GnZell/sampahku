@@ -42,7 +42,7 @@
                                         <tr>
                                             <th>Foto</th>
                                             <td>
-                                                <img src="{{ asset('storage/' . $sampahku->foto) }}" alt="User Image" width="50%">
+                                                <img src="{{ asset('upload/' . $sampahku->foto) }}" alt="User Image" width="50%">
                                             </td>
                                         </tr>
                                     </tbody>

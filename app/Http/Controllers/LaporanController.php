@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Laporan;
 use Illuminate\Http\Request;
+use File;
 
 class LaporanController extends Controller
 {
@@ -28,16 +29,20 @@ class LaporanController extends Controller
             'foto' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Validasi foto
         ]);
 
-        if ($request->hasFile('foto')) {
-            $path = $request->file('foto')->store('upload', 'public');
-        }
+        $foto = $request->foto;
+        $namafile  = $foto->getClientOriginalName();
+
+        $dataupload = new Laporan;
+        $dataupload->foto = $namafile;
+
+        $foto->move(public_path() . '/upload', $namafile);
 
         Laporan::create([
             'nama' => $request->nama,
             'alamat' => $request->alamat,
             'deskripsi' => $request->deskripsi,
             'titik_koordinat' => $request->titik_koordinat,
-            'foto' => $path,
+            'foto' => $namafile,
             'user_id' => $request->user_id
 
         ]);
@@ -48,5 +53,19 @@ class LaporanController extends Controller
     {
         $sampahku = Laporan::findOrFail($id);
         return view('sampahku.detail', compact('sampahku'));
+    }
+
+    public function destroy($id)
+    {
+        $sampahku = Laporan::findorfail($id);
+
+        $file = public_path('/upload/') . $sampahku->foto;
+
+        if (file_exists($file)) {
+            @unlink($file);
+        }
+
+        $sampahku->delete();
+        return redirect()->route('sampahku.index');
     }
 }
