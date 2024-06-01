@@ -25,15 +25,23 @@
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Nama</label>
                                         <input type="text" class="form-control" name="nama" placeholder="Nama">
+                                        @error('nama')
+                                        <p class="text-danger">{{ $message }}</p>
+                                        @enderror
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Alamat Lengkap</label>
                                         <input type="text" class="form-control" name="alamat" placeholder="Alamat">
-
+                                        @error('alamat')
+                                        <p class="text-danger">{{ $message }}</p>
+                                        @enderror
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Deskripsi</label>
                                         <textarea class="form-control" rows="3" name="deskripsi" placeholder="Deskripsi"></textarea>
+                                        @error('deskripsi')
+                                        <p class="text-danger">{{ $message }}</p>
+                                        @enderror
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Titik Koordinat (Opsional)</label>
@@ -47,6 +55,9 @@
                                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                                             </div>
                                         </div>
+                                        @error('foto')
+                                        <p class="text-danger">{{ $message }}</p>
+                                        @enderror
                                     </div>
                                 </div>
                         </div>

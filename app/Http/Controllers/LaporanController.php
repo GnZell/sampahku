@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\LaporanRequest;
 use App\Models\Laporan;
 use Illuminate\Http\Request;
-use File;
 
 class LaporanController extends Controller
 {
@@ -20,15 +20,8 @@ class LaporanController extends Controller
         return view('sampahku.create');
     }
 
-    public function store(Request $request)
+    public function store(LaporanRequest $request)
     {
-        $request->validate([
-            'nama' => 'required|string|max:255',
-            'alamat' => 'required|string|max:255',
-            'deskripsi' => 'required|string|max:255',
-            'foto' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Validasi foto
-        ]);
-
         $foto = $request->foto;
         $namafile  = $foto->getClientOriginalName();
 
