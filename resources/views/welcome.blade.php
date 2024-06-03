@@ -34,7 +34,7 @@
     <header id="header" class="header fixed-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="#" class="logo d-flex align-items-center">
                 <img src="{{asset('img/SAMPAHKU-removebg-preview.png')}}" alt="">
                 <span>SampahKu</span>
             </a>
@@ -169,7 +169,7 @@
                                 <img src="{{asset('img/team-1.jpg')}}" class="img-fluid" alt="">
                             </div>
                             <div class="member-info">
-                                <h4>Walter White</h4>
+                                <h4>Anggoro</h4>
                                 <span>Front End Back End</span>
                             </div>
                         </div>
@@ -181,7 +181,7 @@
                                 <img src="{{asset('img/team-1.jpg')}}" class="img-fluid" alt="">
                             </div>
                             <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
+                                <h4>Richard</h4>
                                 <span>Front End Back End</span>
                             </div>
                         </div>
@@ -193,7 +193,7 @@
                                 <img src="{{asset('img/team-1.jpg')}}" class="img-fluid" alt="">
                             </div>
                             <div class="member-info">
-                                <h4>William Anderson</h4>
+                                <h4>Yudha</h4>
                                 <span>Front End Back End</span>
                             </div>
                         </div>

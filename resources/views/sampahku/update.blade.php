@@ -19,26 +19,29 @@
                         <div class="card card-primary">
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form action="" method="post">
+                            <form action="{{Route('sampahku.update', $sampahku->id)}}" method="post" enctype="multipart/form-data">
                                 @csrf
+                                @method('put')
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Nama</label>
-                                        <input type="text" class="form-control" name="nama" placeholder="Nama">
+                                        <input type="text" class="form-control" name="nama" placeholder="Nama" value="{{$sampahku->nama}}">
+
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Alamat Lengkap</label>
-                                        <input type="text" class="form-control" name="alamat" placeholder="Alamat">
+                                        <input type="text" class="form-control" name="alamat" placeholder="Alamat" value="{{$sampahku->alamat}}">
+
 
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Deskripsi</label>
-                                        <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi">
+                                        <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi" value="{{$sampahku->deskripsi}}">
 
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Titik Koordinat (Opsional)</label>
-                                        <input type="text" class="form-control" name="koordinat" placeholder="Titik Koordinat">
+                                        <input type="text" class="form-control" name="titik_koordinat" placeholder="Titik Koordinat" value="{{$sampahku->titik_koordinat}}">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputFile">Foto</label>
@@ -48,6 +51,7 @@
                                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                                             </div>
                                         </div>
+                                        <img src="{{ asset('upload/' . $sampahku->foto) }}" class="mt-2" alt="User Image" width="25%">
                                     </div>
                                 </div>
                         </div>
@@ -55,7 +59,7 @@
 
                         <div class="card-footer">
                             <button type="submit" class="btn btn-success">Submit</button>
-                            <a href="/sampahku" class="btn btn-primary">Kembali</a>
+                            <a href="{{Route('sampahku.index')}}" class="btn btn-primary">Kembali</a>
                         </div>
                         </form>
                     </div>

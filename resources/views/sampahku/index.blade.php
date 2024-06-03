@@ -9,7 +9,7 @@
                     <h1 class="m-0">SampahKu</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
-            <a class="btn btn-primary" href="/sampahku/create">
+            <a class="btn btn-primary" href="{{Route('sampahku.create')}}">
                 <i class="fas fa-edit"></i> Tambah Laporan
             </a>
         </div><!-- /.container-fluid -->
@@ -40,7 +40,7 @@
                                             <form action="{{Route('sampahku.destroy', $data->id)}}" method="post">
                                                 @csrf
                                                 @method('delete')
-                                                <a class="btn btn-success btn-sm" href="/sampahku/update">
+                                                <a class="btn btn-success btn-sm" href="{{Route('sampahku.edit', $data->id)}}">
                                                     <i class="fas fa-pencil-alt">
                                                     </i>
                                                     Ubah
