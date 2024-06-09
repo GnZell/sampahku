@@ -69,4 +69,5 @@
         </div>
         <!-- /.row -->
     </div><!-- /.container-fluid -->
-    @endsection
+</div>
+@endsection

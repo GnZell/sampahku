@@ -35,7 +35,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-success elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
+            <a href="#" class="brand-link">
                 <img src="{{asset('img/SAMPAHKU-removebg-preview.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">SampahKu</span>
             </a>
@@ -45,10 +45,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{asset('dist/img/avatar5.png')}}" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Yudha Rifqi Ananta</a>
+                        <a href="#" class="d-block">{{Auth()->user()->name}}</a>
                     </div>
                 </div>
 
@@ -58,28 +57,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
-                            <a href="/dashboard" class="nav-link">
+                            <a href="{{Route('sampahku.dashboard')}}" class="nav-link">
                                 <i class="far fa-file nav-icon"></i>
                                 <p>Dashboard</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/sampahku" class="nav-link">
+                            <a href="{{Route('sampahku.index')}}" class="nav-link">
                                 <i class="fa fa-location-arrow nav-icon"></i>
                                 <p>SampahKu</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/profil" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="far fa-user nav-icon"></i>
                                 <p>Profil</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/logout" class="nav-link">
+
+
+                            <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" href="{{Route('logout')}}" class="nav-link">
                                 <i class="fas fa-sign-out-alt nav-icon"></i>
                                 <p>Logout</p>
                             </a>
+                            <form id="logout-form" action="{{Route('logout')}}" method="post">
+                                @csrf
+                            </form>
                         </li>
                     </ul>
                 </nav>
