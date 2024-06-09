@@ -54,7 +54,7 @@
                         <!-- /.col -->
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary btn-block">Masuk</button>
-                            <p>Belum punya akun? <a href="/register">Daftar</a></p>
+                            <p>Belum punya akun? <a href="{{Route('register')}}">Daftar</a></p>
                         </div>
                         <!-- /.col -->
                     </div>
