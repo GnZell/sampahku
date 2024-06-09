@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\LaporanRequest;
 use App\Models\Laporan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Lang;
 
 class LaporanController extends Controller
@@ -12,7 +13,12 @@ class LaporanController extends Controller
     //
     public function index()
     {
-        $sampahku = Laporan::latest()->get();
+        if (Auth::user()->role == 'admin') {
+            $sampahku = Laporan::all(); // Admin dapat melihat semua laporan
+        } else {
+            $sampahku = Laporan::where('user_id', Auth::id())->get(); // User hanya melihat laporan mereka
+        }
+
         return view('sampahku.index', compact('sampahku'));
     }
 
@@ -41,8 +47,7 @@ class LaporanController extends Controller
             'deskripsi' => $request->deskripsi,
             'titik_koordinat' => $request->titik_koordinat,
             'foto' => $namafile,
-            'user_id' => $request->user_id
-
+            'user_id' => Auth::id()
         ]);
         return redirect()->route('sampahku.index');
     }

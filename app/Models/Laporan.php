@@ -11,4 +11,9 @@ class Laporan extends Model
 
     protected $table = 'laporans';
     protected $guarded = ['id'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

@@ -24,7 +24,7 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Nama</label>
-                                        <input type="text" class="form-control" name="nama" placeholder="Nama">
+                                        <input type="text" class="form-control" name="nama" placeholder="Nama" readonly value="{{Auth()->user()->name}}">
                                         @error('nama')
                                         <p class="text-danger">{{ $message }}</p>
                                         @enderror
