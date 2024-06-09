@@ -83,4 +83,9 @@ class LaporanController extends Controller
         $sampahku->delete();
         return redirect()->route('sampahku.index');
     }
+
+    public function profil()
+    {
+        return view('sampahku.profil');
+    }
 }

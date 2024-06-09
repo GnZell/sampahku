@@ -69,14 +69,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="{{Route('sampahku.profil')}}" class="nav-link">
                                 <i class="far fa-user nav-icon"></i>
                                 <p>Profil</p>
                             </a>
                         </li>
                         <li class="nav-item">
-
-
                             <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" href="{{Route('logout')}}" class="nav-link">
                                 <i class="fas fa-sign-out-alt nav-icon"></i>
                                 <p>Logout</p>

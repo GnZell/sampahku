@@ -30,4 +30,5 @@ Route::post('/sampahku/create', [LaporanController::class, 'store'])->name('samp
 Route::get('/sampahku/detail/{id}', [LaporanController::class, 'detail'])->name('sampahku.detail');
 Route::get('/sampahku/edit/{id}', [LaporanController::class, 'edit'])->name('sampahku.edit');
 Route::put('/sampahku/edit/{id}', [LaporanController::class, 'update'])->name('sampahku.update');
+Route::get('/sampahku/profil', [LaporanController::class, 'profil'])->name('sampahku.profil');
 Route::delete('/sampahku/{id}', [LaporanController::class, 'destroy'])->name('sampahku.destroy');
