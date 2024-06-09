@@ -16,6 +16,10 @@ class LaporanController extends Controller
         return view('sampahku.index', compact('sampahku'));
     }
 
+    public function dashboard()
+    {
+        return view('sampahku.dashboard');
+    }
     public function create()
     {
         return view('sampahku.create');

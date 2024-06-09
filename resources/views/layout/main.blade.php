@@ -57,9 +57,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-
                         <li class="nav-item">
                             <a href="/dashboard" class="nav-link">
                                 <i class="far fa-file nav-icon"></i>
@@ -95,22 +92,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         <!-- /.content-header -->
 
-        <!-- Main content -->
+
         @yield('content')
-        <!-- /.content -->
+
+        <!-- /.content-wrapper -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer text-center">
+            <!-- To the right -->
+            <!-- Default to the left -->
+            <strong>Copyright &copy; <?= date('Y'); ?> | Capstone Project SampahKu </strong> All rights reserved.
+        </footer>
+
+        <!-- ./wrapper -->
     </div>
-    <!-- /.content-wrapper -->
-
-
-    <!-- Main Footer -->
-    <footer class="main-footer text-center">
-        <!-- To the right -->
-        <!-- Default to the left -->
-        <strong>Copyright &copy; <?= date('Y'); ?> | Capstone Project SampahKu </strong> All rights reserved.
-    </footer>
-    </div>
-    <!-- ./wrapper -->
-
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->

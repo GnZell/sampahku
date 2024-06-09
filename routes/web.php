@@ -17,6 +17,7 @@ Route::get('/dashboard', function () {
 });
 
 
+Route::get('/dashboard', [LaporanController::class, 'dashboard'])->name('sampahku.dashboard');
 Route::get('/sampahku', [LaporanController::class, 'index'])->name('sampahku.index');
 Route::get('/sampahku/create', [LaporanController::class, 'create'])->name('sampahku.create');
 Route::post('/sampahku/create', [LaporanController::class, 'store'])->name('sampahku.store');
