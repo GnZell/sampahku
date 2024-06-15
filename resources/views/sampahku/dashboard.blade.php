@@ -17,7 +17,6 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-
                             <div class="row">
                                 <div class="col-4">
                                     <img src="{{asset('img/2.png')}}" alt="" width="100%">
@@ -29,8 +28,6 @@
                                     </p>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>

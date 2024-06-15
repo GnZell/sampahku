@@ -42,10 +42,10 @@ class LaporanController extends Controller
         $foto->move(public_path() . '/upload', $namafile);
 
         Laporan::create([
-            'nama' => $request->nama,
-            'alamat' => $request->alamat,
-            'deskripsi' => $request->deskripsi,
-            'titik_koordinat' => $request->titik_koordinat,
+            'nama' => htmlspecialchars($request->nama),
+            'alamat' => htmlspecialchars($request->alamat),
+            'deskripsi' => htmlspecialchars($request->deskripsi),
+            'titik_koordinat' => htmlspecialchars($request->titik_koordinat),
             'foto' => $namafile,
             'user_id' => Auth::id()
         ]);
@@ -65,10 +65,10 @@ class LaporanController extends Controller
 
     public function update(Request $request, $id)
     {
-        $data['nama'] = $request->nama;
-        $data['alamat'] = $request->alamat;
-        $data['deskripsi'] = $request->deskripsi;
-        $data['titik_koordinat'] = $request->titik_koordinat;
+        $data['nama'] = htmlspecialchars($request->nama);
+        $data['alamat'] = htmlspecialchars($request->alamat);
+        $data['deskripsi'] = htmlspecialchars($request->deskripsi);
+        $data['titik_koordinat'] = htmlspecialchars($request->titik_koordinat);
 
         Laporan::whereId($id)->update($data);
 

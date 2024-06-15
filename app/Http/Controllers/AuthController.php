@@ -37,14 +37,14 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('login-page')->with('success', 'Anda Berhasil logout');
+        return redirect()->route('welcome')->with('success', 'Anda Berhasil logout');
     }
 
     public function register(RegisterRequest $request)
     {
         User::create([
-            'name' => $request->nama,
-            'email' => $request->email,
+            'name' => htmlspecialchars($request->nama),
+            'email' => htmlspecialchars($request->email),
             'password' => Hash::make($request->password),
             'role' => 'user',
         ]);

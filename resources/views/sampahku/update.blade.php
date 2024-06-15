@@ -25,7 +25,7 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Nama</label>
-                                        <input type="text" class="form-control" name="nama" placeholder="Nama" value="{{$sampahku->nama}}">
+                                        <input type="text" class="form-control" name="nama" placeholder="Nama" readonly value="{{$sampahku->nama}}">
 
                                     </div>
                                     <div class="form-group">
