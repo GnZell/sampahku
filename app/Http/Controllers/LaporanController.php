@@ -13,6 +13,7 @@ class LaporanController extends Controller
     //
     public function index()
     {
+
         if (Auth::user()->role == 'admin') {
             $sampahku = Laporan::all(); // Admin dapat melihat semua laporan
         } else {
