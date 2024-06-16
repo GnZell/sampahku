@@ -47,6 +47,7 @@ class LaporanController extends Controller
             'deskripsi' => htmlspecialchars($request->deskripsi),
             'titik_koordinat' => htmlspecialchars($request->titik_koordinat),
             'foto' => $namafile,
+            'status' => 'Proses',
             'user_id' => Auth::id()
         ]);
         return redirect()->route('sampahku.index');
@@ -60,7 +61,8 @@ class LaporanController extends Controller
     public function edit($id)
     {
         $sampahku = Laporan::findOrFail($id);
-        return view('sampahku.update', compact('sampahku'));
+        $isAdmin = Auth::user()->role == 'admin';
+        return view('sampahku.update', compact('sampahku', 'isAdmin'));
     }
 
     public function update(Request $request, $id)
@@ -69,6 +71,7 @@ class LaporanController extends Controller
         $data['alamat'] = htmlspecialchars($request->alamat);
         $data['deskripsi'] = htmlspecialchars($request->deskripsi);
         $data['titik_koordinat'] = htmlspecialchars($request->titik_koordinat);
+        $data['status'] = htmlspecialchars($request->status);
 
         Laporan::whereId($id)->update($data);
 

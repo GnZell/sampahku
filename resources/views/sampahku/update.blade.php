@@ -31,18 +31,25 @@
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Alamat Lengkap</label>
                                         <input type="text" class="form-control" name="alamat" placeholder="Alamat" value="{{$sampahku->alamat}}">
-
-
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Deskripsi</label>
                                         <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi" value="{{$sampahku->deskripsi}}">
-
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Titik Koordinat (Opsional)</label>
                                         <input type="text" class="form-control" name="titik_koordinat" placeholder="Titik Koordinat" value="{{$sampahku->titik_koordinat}}">
                                     </div>
+                                    @if($isAdmin)
+                                    <div class="form-group">
+                                        <label>Status</label>
+                                        <select class="form-control" name="status">
+                                            <option>Pilih</option>
+                                            <option value="Proses" {{$sampahku->status == 'Proses' ? 'selected' : ''}}>Proses</option>
+                                            <option value="Selesai" {{$sampahku->status == 'Selesai' ? 'selected' : ''}}>Selesai</option>
+                                        </select>
+                                    </div>
+                                    @endif
                                     <div class="form-group">
                                         <label for="exampleInputFile">Foto</label>
                                         <div class="input-group">
@@ -56,7 +63,6 @@
                                 </div>
                         </div>
                         <!-- /.card-body -->
-
                         <div class="card-footer">
                             <button type="submit" class="btn btn-success">Submit</button>
                             <a href="{{Route('sampahku.index')}}" class="btn btn-primary">Kembali</a>

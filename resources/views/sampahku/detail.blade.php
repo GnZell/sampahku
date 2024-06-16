@@ -40,6 +40,10 @@
                                             <td>{{$sampahku->titik_koordinat}}</td>
                                         </tr>
                                         <tr>
+                                            <th>Status</th>
+                                            <td><span class="badge bg-success">{{$sampahku->status}}</span></td>
+                                        </tr>
+                                        <tr>
                                             <th>Foto</th>
                                             <td>
                                                 <img src="{{ asset('upload/' . $sampahku->foto) }}" alt="User Image" width="50%">

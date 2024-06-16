@@ -44,6 +44,7 @@
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#recent-blog-posts">Blog</a></li>
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                     <li><a class="getstarted scrollto" href="/login">Login</a></li>
@@ -243,7 +244,7 @@
                                 <img src="{{asset('img/team-1.jpg')}}" class="img-fluid" alt="">
                             </div>
                             <div class="member-info">
-                                <h4>Anggoro</h4>
+                                <h4>Septian Dwi Anggoro Mochtar</h4>
                                 <span>Front End Back End</span>
                             </div>
                         </div>
@@ -255,7 +256,7 @@
                                 <img src="{{asset('img/team-1.jpg')}}" class="img-fluid" alt="">
                             </div>
                             <div class="member-info">
-                                <h4>Richard</h4>
+                                <h4>Richard Alexander</h4>
                                 <span>Front End Back End</span>
                             </div>
                         </div>
@@ -267,7 +268,7 @@
                                 <img src="{{asset('img/team-1.jpg')}}" class="img-fluid" alt="">
                             </div>
                             <div class="member-info">
-                                <h4>Yudha</h4>
+                                <h4>Yudha Rifqi Ananta</h4>
                                 <span>Front End Back End</span>
                             </div>
                         </div>

@@ -48,12 +48,10 @@
                                         <input type="text" class="form-control" name="titik_koordinat" placeholder="Titik Koordinat">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputFile">Foto</label>
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" name="foto">
-                                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                                            </div>
+                                        <label for="customFile">Foto</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="foto" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
                                         </div>
                                         @error('foto')
                                         <p class="text-danger">{{ $message }}</p>
