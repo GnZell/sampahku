@@ -18,13 +18,13 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-md-4">
                                     <img src="{{asset('img/2.png')}}" alt="" width="100%">
                                 </div>
-                                <div class="col-8">
+                                <div class="col-md-8">
                                     <h2>Selamat Datang!</h2>
                                     <p class="card-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eum consectetur at quis rem tempora sapiente deserunt, ad vitae eligendi illum ipsa repudiandae soluta earum perferendis accusamus quidem? Quae nulla iusto atque, alias optio quo ipsum deserunt. Sunt cum id obcaecati ducimus eaque! Ea corporis optio molestiae perferendis placeat ullam ipsam nesciunt veniam modi sit! Maxime similique provident reiciendis ratione nam nulla possimus iure soluta eius suscipit ad reprehenderit incidunt corrupti molestias ex consequatur, vitae debitis atque. Adipisci asperiores fugit quos nobis maiores impedit consectetur deserunt enim nostrum ipsum, aliquam amet non esse, ipsam quaerat reprehenderit recusandae, mollitia consequuntur. Aspernatur ea, tempora repellat velit consequatur obcaecati explicabo corporis, adipisci nam odio sit tempore, odit laborum sint? Perspiciatis, mollitia porro totam reprehenderit omnis quia assumenda quo esse neque? Nam nostrum non officiis similique nemo perspiciatis. Dolorum suscipit quisquam tempora vitae laudantium placeat quo fugiat porro, repudiandae nesciunt delectus. Consequuntur, vitae atque!
+                                        SampahKu merupakan sebuah website yang menyediakan pelaporan adanya sampah-sampah yang ada disekiar lingkungan. Aplikasi ini memungkinkan masyarakat untuk secara aktif berpartisipasi dalam menjaga kebersihan lingkungan dengan melaporkan masalah sampah secara cepat dan efisien. Masalah penyebaran sampah di berbagai lokasi telah menjadi perhatian global yang mendesak untuk diselesaikan. Tantangan-tantangan yang harus dihadapi agar sampah tidak merusak ekosistem di bumi menjadi perhatian utama. Sebagai makhluk sosial, kita memiliki tanggung jawab untuk menangani masalah penyebaran ini.
                                     </p>
                                 </div>
                             </div>
