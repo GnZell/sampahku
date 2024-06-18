@@ -44,7 +44,7 @@
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#recent-blog-posts">Blog</a></li>
+                    <li><a class="nav-link scrollto" href="#recent-blog-posts">News</a></li>
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                     <li><a class="getstarted scrollto" href="/login">Login</a></li>
@@ -158,66 +158,32 @@
             <div class="container" data-aos="fade-up">
 
                 <header class="section-header">
-                    <p>Blog</p>
+                    <p>News</p>
                 </header>
 
                 <div class="row">
 
                     <div class="col-lg-4">
                         <div class="post-box">
-                            <div class="post-img"><img src="{{asset('img/blog-1.jpg')}}" class="img-fluid" alt=""></div>
-                            <span class="post-date">Tue, September 15</span>
-                            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-                            <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                            <span class="post-date">15 Juni 2024</span>
+                            <h3 class="post-title">Jorok! Sampah Menumpuk di Area Flyover Ciroyom Bandung</h3>
+                            <a href="https://www.detik.com/jabar/berita/d-7392436/jorok-sampah-menumpuk-di-area-flyover-ciroyom-bandung" class="readmore stretched-link mt-auto" target="_blank"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
 
                     <div class="col-lg-4">
                         <div class="post-box">
-                            <div class="post-img"><img src="{{asset('img/blog-2.jpg')}}" class="img-fluid" alt=""></div>
-                            <span class="post-date">Fri, August 28</span>
-                            <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-                            <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                            <span class="post-date">16 April 2024</span>
+                            <h3 class="post-title">Duh, Tumpukan Sampah di Siring Nol Kilometer Banjarmasin ini Ganggu Pemandangan</h3>
+                            <a href="https://pojokbanua.com/duh-tumpukan-sampah-di-siring-nol-kilometer-banjarmasin-ini-ganggu-pemandangan/" target="_blank" class="readmore stretched-link mt-auto"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
 
                     <div class="col-lg-4">
                         <div class="post-box">
-                            <div class="post-img"><img src="{{asset('img/blog-3.jpg')}}" class="img-fluid" alt=""></div>
-                            <span class="post-date">Mon, July 11</span>
-                            <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-                            <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row mt-4">
-
-                    <div class="col-lg-4">
-                        <div class="post-box">
-                            <div class="post-img"><img src="{{asset('img/blog-1.jpg')}}" class="img-fluid" alt=""></div>
-                            <span class="post-date">Tue, September 15</span>
-                            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-                            <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="post-box">
-                            <div class="post-img"><img src="{{asset('img/blog-2.jpg')}}" class="img-fluid" alt=""></div>
-                            <span class="post-date">Fri, August 28</span>
-                            <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-                            <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="post-box">
-                            <div class="post-img"><img src="{{asset('img/blog-3.jpg')}}" class="img-fluid" alt=""></div>
-                            <span class="post-date">Mon, July 11</span>
-                            <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-                            <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                            <span class="post-date">14 September 2023</span>
+                            <h3 class="post-title">Tumpukan Sampah Membandel di Trotoar Ahmad Yani, Wali Kota Ancam Denda Maksimal</h3>
+                            <a href="https://radarbanjarmasin.jawapos.com/banua/1973161796/tumpukan-sampah-membandel-di-trotoar-ahmad-yani-wali-kota-ancam-denda-maksimal" target="_blank" class="readmore stretched-link mt-auto"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -241,7 +207,9 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                         <div class="member">
                             <div class="member-img">
-                                <img src="{{asset('img/team-1.jpg')}}" class="img-fluid" alt="">
+                                <br>
+                                <br>
+                                <img src="{{asset('img/anggoro.png')}}" class="img-fluid" alt="" width="70%" height="20%">
                             </div>
                             <div class="member-info">
                                 <h4>Septian Dwi Anggoro Mochtar</h4>
@@ -253,7 +221,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                         <div class="member">
                             <div class="member-img">
-                                <img src="{{asset('img/team-1.jpg')}}" class="img-fluid" alt="">
+                                <img src="{{asset('img/richard.png')}}" class="img-fluid" alt="" width="80%" height="20%">
                             </div>
                             <div class="member-info">
                                 <h4>Richard Alexander</h4>
@@ -265,7 +233,10 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div class="member">
                             <div class="member-img">
-                                <img src="{{asset('img/team-1.jpg')}}" class="img-fluid" alt="">
+                                <br>
+                                <br>
+                                <br>
+                                <img src="{{asset('img/yudha.png')}}" class="img-fluid" alt="" width="60%" height="20%">
                             </div>
                             <div class="member-info">
                                 <h4>Yudha Rifqi Ananta</h4>
